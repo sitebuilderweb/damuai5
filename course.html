@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course | Damu AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+  <div class="grid-overlay"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">✦</div>
+        <div class="brand-text">
+          <span class="brand-title">Damu AI</span>
+          <span class="brand-subtitle">Online Learning Platform</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html">Басты бет</a>
+        <a href="index.html#courses">Курстар</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="course-page">
+    <section class="course-hero">
+      <div class="container">
+        <a href="index.html#courses" class="back-link">← Барлық курстар</a>
+
+        <div class="course-hero-box glass-card">
+          <div class="course-hero-left">
+            <div id="course-pill" class="pill">Курс</div>
+            <h1 id="course-title">Курс атауы</h1>
+            <p id="course-description">Курс сипаттамасы</p>
+          </div>
+
+          <div class="course-hero-right">
+            <div class="hero-mini-course">
+              <span id="course-emoji">📘</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="course-content-section">
+      <div class="container course-layout">
+        <aside class="left-column">
+          <div class="glass-card side-panel">
+            <h2>Сабақ мазмұны</h2>
+            <p id="course-summary" class="muted-text"></p>
+            <div id="lesson-list" class="lesson-list"></div>
+          </div>
+        </aside>
+
+        <section class="right-column">
+          <div class="glass-card video-panel">
+            <iframe id="lesson-video" class="video-frame" src="" allowfullscreen></iframe>
+            <h3 id="lesson-title" class="video-title"></h3>
+            <p id="lesson-description" class="video-description"></p>
+            <a id="lesson-link" class="video-link" href="#" target="_blank">YouTube-та ашу</a>
+          </div>
+
+          <div class="glass-card test-panel">
+            <h2>Тест</h2>
+            <form id="quiz-form"></form>
+            <button id="quiz-submit" type="button" class="btn btn-success">Тестті аяқтау</button>
+            <div id="quiz-result" class="quiz-result"></div>
+
+            <div id="finish-box" class="finish-box">
+              <h3>🎉 Курс аяқталды!</h3>
+              <p>Сіз бұл курсты сәтті аяқтадыңыз.</p>
+              <a href="index.html#courses" class="btn btn-primary finish-btn">Барлық курстарға оралу</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
